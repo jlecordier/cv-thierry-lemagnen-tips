@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en"></html>  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Liens CSS et JS-->
+        
+    <script src="../cv/js/index.js" defer></script>
+    <script src="https://kit.fontawesome.com/51e707b020.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="../cv/css/reset.css"> -->
+    <link rel="stylesheet" href="../cv/css/style.css">
+    <link rel="stylesheet" href="../cv/css/mobile.css">
+    <!-- <script src="js/jquery.js" defer></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Thierry Lemagnen</title>
+</head>
+<body>
+
+    <!--Bouton retour en haut de page-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="../cv/assets/arrow-top.png" alt=""></i>
+    </button>
+
+    <!--Header Menu-->
+    <nav id="nav-desktop">
+        <ul class="desktop-menu">
+            <li class="choice"><a class="choice" href="#accueil">Accueil</a></li>
+            <li class="choice"><a class="choice2" href="#a-propos">A propos</a></li>
+            <li class="choice"><a class="choice3" href="#competences">Compétences</a></li>
+            <li class="choice"><a class="choice4" href="#parcours">Parcours</a></li>
+            <li class="choice"><a class="choice5" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Burger Menu-->
+    <nav id="burger-nav">        
+        <ul class="burger-menu" >
+            <li class="path"><a class="path1" href="#accueil">Accueil</a></li>
+            <li class="path"><a class="path2" href="#a-propos">A propos</a></li>
+            <li class="path"><a class="path3" href="#competences">Compétences</a></li>
+            <li class="path"><a class="path4" href="#parcours">Parcours</a></li>
+            <li class="path"><a class="path5" href="#contact">Contact</a></li>
+        </ul>
+        <button type="button" class="burger">☰</button>
+        <button type="button" class="close-menu">✖</button>
+    </nav>
+    <main>
+        <!--Page Accueil avec image de fond: div contenant l'image-->
+        <div id="accueil" class="cafe">
+            <!--div de l'accueil-->
+            <div class="accueil" id="front">
+                <div class="conteneur" id="frontpage">
+                    <div id="intro">
+                        <h2>Bonjour, je m'appelle Thierry et je suis</h2>
+                        <h1>Développeur Web</h1>
+                    </div>
+                    <p class="topo">Je suis à la recherche d'une <strong>alternance</strong> dans le cadre de ma poursuite d'étude en <strong>développement web</strong>  à <strong>Caen</strong> (Calvados) à compter d'Avril 2023</p>
+                    <div class="icon-esp">
+                        <div class="icone skill">
+                            <i class="fas fa-code"></i>
+                            front-end
+                        </div>
+                        <div class="icone skill">
+                            <i class="fas fa-database"></i>
+                            back-end
+                        </div>
+                        <div class="icone skill">
+                            <i class="fas fa-mobile-screen"></i>
+                            mobile
+                        </div>
+                        <div class="icone skill">
+                            <i class="fas fa-pen-ruler"></i>
+                            web-design
+                        </div>
+                        <div class="icone skill">
+                            <i class="fas fa-globe"></i>
+                            anglais
+                        </div> 
+                    </div>
+                </div>               
+            </div>
+        </div>
+        
+        <!--Page à propos-->
+        <div id="a-propos" class="a-p">
+            <div class="container-a-p">
+                <div class="who-am-i"> 
+                    <!--container gauche-->
+                    <div class="option a-p-left">
+                        <div class="picture">
+                            <!-- <img src="../cv/assets/pic_identite_2022-2.jpg" alt="photo de Thierry Lemagnen">
+                            <img class="draw" src="../cv/assets/bitmoji-perso.svg" alt="bitmoji de Thierry Lemagnen"> -->
+                        </div>
+                        <div class="ss-txt">
+                            <p><strong>Nom : </strong>Thierry Lemagnen<br><strong>Âge : </strong>50 ans<br><strong>Ville : </strong>Cabourg (Calvados)<br><strong>Hobbies : </strong>Jeux de société, Roller, Danse</p>
+                        </div>            
+                    </div>
+                    <!--container droit-->
+                    <div class="option a-p-right">
+                        <!-- <div> -->
+                        <div class="picture right">
+                            <!-- <img class="pict" src="../cv/assets/pic_identite_2022-2.jpg" alt="photo de Thierry Lemagnen">
+                            <img class="draw" src="../cv/assets/bitmoji-perso.svg" alt="bitmoji de Thierry Lemagnen"> -->
+                        </div>
+                        <!-- </div> -->
+    
+                        <h2>À propos de moi</h2>
+    
+                        <div class="ss-txt right">
+                            <p><strong>Nom : </strong>Thierry Lemagnen<br><strong>Âge : </strong>50 ans<br><strong>Ville : </strong>Cabourg (Calvados)<br><strong>Hobbies : </strong>Jeux de société, Roller, Danse</p>
+                        </div>            
+                        <br>
+                        <p class="presentation" >Développeur web junior, je suis en recherche d'une alternance après avoir validé une année d'étude suite à une reconversion.</p>
+                        <p class="presentation" >Issu de la restauration et après avoir effectué un bilan de compétences, j'ai souhaité me reconvertir dans ce domaine par appétence pour les nouvelles techonolgies.</p>
+                        <p class="presentation" >Dans le cadre de ma formation, j'ai étudié HTML, CSS, JavaScript, PHP, MySql, Laravel, Wordpress.</p>
+                    </div>
+                </div>
+                
+                <!--boutons-->        
+                <div class="box">
+                    <button><a href="#contact">Me Contacter</a></button>
+                    <button>Télécharger mon CV</button>
+                </div>
+            </div>
+            
+        </div>
+        <div id="competences" class="competences">
+            <div class="competences-page">
+                <h2 class="competences-page-h2">Compétences</h2>
+                <div class="competences">
+                    <div class="competence-box">
+                        <h3 class="animationh3FE">Front-End</h3>
+                        <ul class="animationFE">
+                            <li><p>HTML 5</p><span>Langage</span></li>
+                            <li><p>CSS 3</p><span>Langage</span></li>
+                            <li><p>JavaScript</p><span>Langage</span></li>
+                            <li><p>JQuery</p><span>Bibliothèque JS</span></li>
+                            <li><p>ReactJS</p><span>Bibliothèque JS</span></li>
+                            <li><p>JSON</p></li>
+                            <li><p>Ajax</p></li>
+                        </ul> 
+                    </div>
+                    <div class="competence-box">
+                        <h3 class="animationh3BE">Back-End</h3>
+                        <ul class="animationBE">
+                            <li><p>PHP 8</p><span>Langage</span></li>
+                            <li><p>MySQL</p><span>SGBD</span></li>
+                            <li><p>Laravel</p><span>Framework</span></li>
+                        </ul>
+                    </div>
+                    <div class="competence-box">
+                        <h3 class="animationh3CM">CMS</h3>
+                        <ul class="animationCM">
+                            <li><p>Wordpress</p></li>
+                            <li><p>WooCommerce</p><span>Extension</span></li>
+                        </ul>
+                    </div>
+                    <div class="competence-box">
+                        <h3 class="animationh3DE">Design</h3>
+                            <ul class="animationDE">
+                                <li><p>Figma</p><span>Maquettage</span></li>
+                                <li><p>Gimp, Inkscape</p><span>Graphisme</span></li>
+                                <li><p>User Experience Design</p></li>
+                            </ul>
+                    </div>
+                    <div class="competence-box">
+                        <h3 class="animationh3CA">Cadre</h3>
+                        <ul class="animationCA">
+                            <li><p>Windows</p><span>Système d'exploitation</span></li>
+                            <li><p>Wamp</p><span>Serveur</span></li>
+                            <li><p>Git, GitHub</p><span>Versioning</span></li>
+                            <li><p>Anglais</p><span>Langue</span> </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="parcours" class="parcours">
+            <!-- <span class="header-parcours"></span> -->
+            <div class="parcours-formation">
+                <h2 class="parcours-formation-title">Parcours</h2>
+            </div> 
+            
+            <!--timeline-->
+            <div class="parcours-formation-title-timeline">
+                <div class="timeline-container parcours-formation-title-timeline-container left-container">
+                    <img src="../cv/assets/circle-fac-colorise.svg" alt="hat university">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">Développeur Web et Web Mobile</h3>
+                        <small>JUIN 2022 à MARS 2023</small>
+                        <p class="text-box-p">Via Formation, Hérouville-Saint-Clair (14)</p> 
+                        <span class="left-container-arrow"></span>
+                    </div>
+                    
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container right-container">
+                    <img src="../cv/assets/circle-service-colorise.svg" alt="waiting service">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">Chef de rang</h3>
+                        <small>MAI 2016 à MAI 2022</small>
+                        <p class="text-box-p">Grand Casino de Cabourg, (14)</p> 
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container right-container">
+                    <img src="../cv/assets/circle-service-colorise.svg" alt="waiting service">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">Chef de rang</h3>
+                        <small>JUILLET 2008 à AVRIL 2016</small>
+                        <p class="text-box-p">L'Alsace, Champs-Élysées, Paris</p> 
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container right-container">
+                    <img src="../cv/assets/circle-service-colorise.svg" alt="waiting service">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">Chef de rang</h3>
+                        <small>JUIN 2002 à JUIN 2008</small>
+                        <p class="text-box-p">Brasserie Flo, Paris X</p> 
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container right-container">
+                    <img src="../cv/assets/circle-service-colorise.svg" alt="waiting service">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">Chef de rang</h3>
+                        <small>AVRIL 2001 à JUIN 2002</small>
+                        <p class="text-box-p">Le Vaudeville, Paris II</p> 
+                        <span class="right-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container left-container">
+                    <img src="../cv/assets/circle-fac-colorise.svg" alt="hat university">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">First Certificate in English</h3>
+                        <small>DECEMBRE 1996</small>
+                        <p class="text-box-p">North West College of London, Royaume Uni</p> 
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+                <div class="timeline-container parcours-formation-title-timeline-container left-container">
+                    <img src="../cv/assets/circle-fac-colorise.svg" alt="hat university">
+                    <div class="text-box">
+                        <h3 class="text-box-h3">DUT Gestion des Entreprises et des Administrations</h3>
+                        <small>JUIN 1993</small>
+                        <p class="text-box-p">Université de Caen (14)</p> 
+                        <span class="left-container-arrow"></span>
+                    </div>
+                </div>
+            </div>
+                     
+        </div>
+        <!--Page contact-->        
+        <div  id="contact" class="contact">
+            <div class="container">
+                <div class="head-contact">
+                    <h2>Contactez-moi</h2>
+                    <p>À la recherche d'une <strong>alternance</strong><br> dans le cadre de ma poursuite d'étude en <br><strong>développement web</strong><br>  à <strong>Caen</strong> (Calvados)</p>
+                </div>
+                <!--Boites de taille identique placées horizontalement inline-->
+                <div class="space">
+                    <!--Boite contact téléphonique-->
+                    <div class="item tel">
+                        <a href="tel:+0634247694">
+                            <img class="operator" src="../cv/assets/telephone-operator-svgrepo-com.svg" alt="opérateur au téléphone">
+                            <p>06 34 24 76 94</p>
+                        </a>
+                    </div>
+                    <!--Boite mail-->
+                    <div class="item letter">
+                        <a href="mailto:lema.77.72@gmail.com">
+                            <img class="lettre" src="../cv/assets/letter-svgrepo-com.svg" alt="mail">
+                            <p>lema.77.72@gmail.com</p>
+                        </a>
+                    </div>
+                    <!--Boite rencontre in situ-->
+                    <div class="item situ">
+                        <img class="in-situ" src="../cv/assets/meeting-in-situ.svg" alt="dessin meeting in situ">
+                        <p>Vous souhaitez me rencontrer ?</p>
+                        <p>Je suis disponible sur <strong>Caen</strong> et sa région.</p>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </main>
+
+    
+    <!--Footer éléments centrés sur fond noir-->
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/thierry-lemagnen/" target="_blank"><img class="lk" src="../cv/assets/icons8-linkedin-circled.svg" alt="Logo de LinkedIn"></a>
+            <a href="https://github.com/lemthe" target="_blank"><img class="github" src="../cv/assets/icons8-github.svg" alt="Logo de GitHub"></a>
+            <a href="https://app.assessfirst.com/_/profile/7kwamkim-thierry-lemagnen" target="_blank"><img class="assets" src="../cv/assets/dessin.svg" alt="Logo de AssessFirst"></a><br>
+        </div>
+        <!--Liens-->
+        
+        <!--Mentions légales-->
+        Thierry LEMAGNEN © 2023<br>
+        Tous droits réservés
+    </footer>
+    <script>
+        /* jQuery */
+        $(document).ready(function(){
+            $(".choice3").click(function(){
+                $(".animationFE").animate({
+                height: 'show',
+                },4000);
+                $(".animationBE").animate({
+                height: 'show',
+                },4000);
+                $(".animationCM").animate({
+                height: 'show',
+                },4000);
+                $(".animationDE").animate({
+                 height: 'show',
+                },4000);
+                $(".animationCA").animate({
+                height: 'show',
+                },4000);
+            });
+            $(".choice4").click(function(){
+                $(".parcours .parcours-formation .parcours-formation-title").css("background-color", "#bfc3b5");
+                $(".timeline-container").css("animation-play-state", "running");
+                $(".parcours-formation-title-timeline").fadeIn("slow");
+            });
+            $(".path3").click(function(){
+                $(".animationFE").animate({
+                height: 'show',
+                },4000);
+                $(".animationBE").animate({
+                height: 'show',
+                },4000);
+                $(".animationCM").animate({
+                height: 'show',
+                },4000);
+                $(".animationDE").animate({
+                 height: 'show',
+                },4000);
+                $(".animationCA").animate({
+                height: 'show',
+                },4000);
+            });
+            $(".path4").click(function(){
+                $(".parcours .parcours-formation .parcours-formation-title").css("background-color", "#bfc3b5");
+                $(".timeline-container").css("animation-play-state", "running");
+                $(".parcours-formation-title-timeline").fadeIn("slow");
+            });
+            $(".competences").mouseenter(function () {
+                $(".animationFE").animate({
+                height: 'show',
+                },"slow");
+                $(".animationBE").animate({
+                height: 'show',
+                },"slow");
+                $(".animationCM").animate({
+                height: 'show',
+                },"slow");
+                $(".animationDE").animate({
+                 height: 'show',
+                },"slow");
+                $(".animationCA").animate({
+                height: 'show',
+                },"slow");
+            });
+            $(".parcours .parcours-formation .parcours-formation-title").mouseenter(function () {
+                $(this).css(   
+                    "background-color", "#bfc3b5");
+                $(".timeline-container").css(
+                    "animation-play-state", "running");               
+            });
+            $(".parcours-formation").mouseenter(function () {
+                $(".parcours-formation-title-timeline").fadeIn("slow");                
+            });                                 
+        });
+        /* window.location.href is a string in the url */
+        /* text.indexOf("#")+1 représente l'index dans cette string qui suit le # */
+        /* result est une sous-string qui commence juste après le # */ 
+        let result = (window.location.href).substring((window.location.href).indexOf("#")+1);
+        $(document).ready(function(){
+            if (result=="competences"){
+                $(".choice3").css(function(){
+                    $(".animationFE").animate({
+                    height: 'show',
+                    },4000);
+                    $(".animationBE").animate({
+                    height: 'show',
+                    },4000);
+                    $(".animationCM").animate({
+                    height: 'show',
+                    },4000);
+                    $(".animationDE").animate({
+                    height: 'show',
+                    },4000);
+                    $(".animationCA").animate({
+                    height: 'show',
+                    },4000);
+                });          
+            } else if (result=="parcours"){
+                $(".choice4").css(function(){
+                    $(".parcours .parcours-formation .parcours-formation-title").css("background-color", "#bfc3b5");
+                    $(".timeline-container").css("animation-play-state", "running");
+                    $(".parcours-formation-title-timeline").fadeIn("slow");
+                });
+            };});
+
+    </script>
+
+
+    
+</body>
+</html>
