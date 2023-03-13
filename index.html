@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Liens CSS et JS-->
-        
+    <!--Liens CSS et JS-->        
     <script src="../cv/js/index.js" defer></script>
     <script src="https://kit.fontawesome.com/51e707b020.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" type="text/css" href="../cv/css/reset.css"> -->
@@ -372,40 +371,6 @@
                 $(".parcours-formation-title-timeline").fadeIn("slow");                
             });                                 
         });
-        /* window.location.href is a string in the url */
-        /* text.indexOf("#")+1 représente l'index dans cette string qui suit le # */
-        /* result est une sous-string qui commence juste après le # */ 
-        let result = (window.location.href).substring((window.location.href).indexOf("#")+1);
-        $(document).ready(function(){
-            if (result=="competences"){
-                $(".choice3").css(function(){
-                    $(".animationFE").animate({
-                    height: 'show',
-                    },4000);
-                    $(".animationBE").animate({
-                    height: 'show',
-                    },4000);
-                    $(".animationCM").animate({
-                    height: 'show',
-                    },4000);
-                    $(".animationDE").animate({
-                    height: 'show',
-                    },4000);
-                    $(".animationCA").animate({
-                    height: 'show',
-                    },4000);
-                });          
-            } else if (result=="parcours"){
-                $(".choice4").css(function(){
-                    $(".parcours .parcours-formation .parcours-formation-title").css("background-color", "#bfc3b5");
-                    $(".timeline-container").css("animation-play-state", "running");
-                    $(".parcours-formation-title-timeline").fadeIn("slow");
-                });
-            };});
-
-    </script>
-
-
-    
+    </script>    
 </body>
 </html>
