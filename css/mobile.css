@@ -100,8 +100,8 @@
     }
     /* headers des pages compétences, parcours et contact */
     /* compétences : header */
-    .competences-page-h2 {
-        font-size: 4rem;
+    .competences-page h2 {
+        font-size: clamp(1vw, 3em, 10vw);
         font-weight: 500;
         padding: 1.125rem;
     }

@@ -303,8 +303,7 @@ h1 {
 .competences-page {
   margin: 0 auto 0 auto;
 }
-
-.competences-page-h2 {
+.competences-page h2 {
   color: #bfc3b5;
   text-align: center;
   text-transform: uppercase;

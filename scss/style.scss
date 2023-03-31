@@ -313,14 +313,15 @@ h1 {
 }
 .competences-page {
     margin: 0 auto 0 auto;
-}
-.competences-page-h2 {
-    color: #bfc3b5;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 5.5rem;
-    font-weight: 500;
-    padding: 1.875rem;
+
+    h2 {
+        color: #bfc3b5;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 5.5rem;
+        font-weight: 500;
+        padding: 1.875rem;
+    }
 }
 
 .competence-box {
