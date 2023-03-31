@@ -217,23 +217,23 @@ h1 {
 
         .who-am-i {
             text-align: justify;
-
-            &:after {
-                content: '';
-                display: inline-block;
-                width: 100%;
-            }
-
-            .option {
-                /* je répartie l'espace entre about-left et about-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
-                display: inline-block;
-            }
         }
     }
 
     .left {
         width: 23rem;
     }
+}
+.who-am-i {
+    .option {
+        /* je répartie l'espace entre about-left et about-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
+        display: inline-block;
+    }
+}
+.who-am-i::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
 }
 .about-left .ss-txt {
     padding-top: 2rem;

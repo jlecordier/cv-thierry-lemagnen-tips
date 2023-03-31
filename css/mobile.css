@@ -4,7 +4,7 @@
         background-attachment: scroll;
     }
     /* barre de navigation */
-    #nav-desktop .desktop-menu .choice a {
+    #nav-desktop .desktop-menu li a {
         font-size: 1rem;
     }
     /*  Je change la taille de la font pour la partie présentation */
@@ -56,7 +56,7 @@
         right: 1.5rem;
         border: none;
     }
-    #burger-nav .burger-menu .path a {
+    #burger-nav .burger-menu li a {
         font-family: 'Josefin Sans', sans-serif;
         text-transform: uppercase;
         color: #bfc3b5;
@@ -226,12 +226,6 @@
     }
     .competence-box ul {
         margin: 0;
-    }
-    .competence-box ul.animationFE,
-    .competence-box ul.animationBE,
-    .competence-box ul.animationCM,
-    .competence-box ul.animationDE,
-    .competence-box ul.animationCA {
         padding: 5px;
     }
     .competence-box ul li {
