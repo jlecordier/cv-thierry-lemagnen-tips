@@ -8,13 +8,11 @@ function qsa(/** @type {string} */ qs) {
     return Array.from(document.querySelectorAll(qs));
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function scrollBackToTheTopOfTheDocument() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
 
-// Get the button
 const scrollBackTopButton = qs('#scroll-back-top-button');
 scrollBackTopButton.addEventListener('click', () =>
     scrollBackToTheTopOfTheDocument()
@@ -49,9 +47,9 @@ window.addEventListener('scroll', () => {
 });
 
 //menu burger
-const openBurgerMenuButton = qs('button.burger');
+const openBurgerMenuButton = qs('#open-burger-menu-button');
 const burgerMenu = qs('.burger-menu');
-const closeBurgerMenuButton = qs('.close-menu');
+const closeBurgerMenuButton = qs('#close-burger-menu-button');
 function openBurgerMenu() {
     openBurgerMenuButton.style.display = 'none';
     burgerMenu.style.display = 'block';

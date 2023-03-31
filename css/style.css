@@ -41,7 +41,7 @@ h1 {
 }
 
 /** Bouton retour haut de page **/
-#myBtn {
+#scroll-back-top-button {
     display: none;
     position: fixed;
     bottom: 3rem;
@@ -53,7 +53,7 @@ h1 {
     cursor: pointer;
     z-index: 99;
 }
-#myBtn img {
+#scroll-back-top-button img {
     bottom: 3rem;
     right: 4rem;
     max-height: 5rem;
@@ -61,7 +61,7 @@ h1 {
     border-radius: 50%;
 }
 
-#myBtn:hover {
+#scroll-back-top-button:hover {
     background-color: #555;
 }
 
@@ -112,10 +112,10 @@ h1 {
 #burger-nav {
     display: none;
 }
-.burger {
+#open-burger-menu-button {
     display: none;
 }
-.close-menu {
+#close-burger-menu-button {
     display: none;
 }
 /* ICONE-ESP */
@@ -195,22 +195,22 @@ h1 {
 
 /** Page à propos **/
 
-.a-p {
+.about {
     /* height: 100vh; */
     opacity: 0.875;
     background-color: rgb(226, 235, 232);
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     padding: 5rem 0 3.75rem 0;
 }
-#a-propos .container-a-p {
+#about .container-about {
     max-width: 75rem;
     margin: auto;
 }
-#a-propos .container-a-p .who-am-i {
+#about .container-about .who-am-i {
     text-align: justify;
 }
 .who-am-i .option {
-    /* je répartie l'espace entre a-p-left et a-p-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
+    /* je répartie l'espace entre about-left et about-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
     display: inline-block;
 }
 .who-am-i:after {
@@ -218,10 +218,10 @@ h1 {
     display: inline-block;
     width: 100%;
 }
-.a-p.left {
+.about.left {
     width: 23rem;
 }
-.a-p-left .ss-txt {
+.about-left .ss-txt {
     padding-top: 2rem;
     line-height: 1.875rem;
     font-size: 1.5rem;
@@ -245,15 +245,15 @@ h1 {
     background-size: cover;
 }
 
-.a-p-right {
+.about-right {
     vertical-align: top;
     width: 40rem;
 }
-.a-p-right h2 {
+.about-right h2 {
     padding-bottom: 1.5rem;
     font-size: 4rem;
 }
-.a-p-right p {
+.about-right p {
     font-size: 2.5rem;
     text-align: justify;
 }
@@ -322,31 +322,11 @@ h1 {
     padding: 10px 5px 10px 5px;
     text-align: center;
 }
-.competence-box ul.animationFE {
-    display: none;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    list-style-type: none;
-}
-.competence-box ul.animationBE {
-    display: none;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    list-style-type: none;
-}
-.competence-box ul.animationCM {
-    display: none;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    list-style-type: none;
-}
-.competence-box ul.animationDE {
-    display: none;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    list-style-type: none;
-}
-.competence-box ul.animationCA {
+.competence-box ul.animation-front-end,
+.competence-box ul.animation-back-end,
+.competence-box ul.animation-cms,
+.competence-box ul.animation-design,
+.competence-box ul.animation-env {
     display: none;
     padding: 20px 20px 20px 20px;
     text-align: center;
@@ -651,7 +631,7 @@ footer img:hover {
 /* Responsive quand l'écran est égal ou inférieur à 1787 pixels */
 /*@media screen and (max-width: 1787px){*/
 /* à propos : diminue la taille du texte sur la droite */
-/*.a-p-right {
+/*.about-right {
         font-size: 2rem;
     }
 }*/
@@ -686,7 +666,7 @@ footer img:hover {
     }
 
     /* Page à propos */
-    /* .a-p-right {
+    /* .about-right {
         flex: 6;
     }
     .box button {
@@ -724,17 +704,17 @@ footer img:hover {
         font-size: 2.063rem;
     }
     /* page à propos */
-    #a-propos .container-a-p {
+    #about .container-about {
         max-width: 85%;
     }
 
     /* .draw{
         width: 272.25px;
     } */
-    .a-p-right {
+    .about-right {
         width: 55%;
     }
-    .a-p-right h2 {
+    .about-right h2 {
         font-size: 3rem;
     }
     p.presentation {
@@ -747,19 +727,19 @@ footer img:hover {
     }
 }
 @media screen and (max-width: 1200px) {
-    /*a-propos*/
-    #a-propos .container-a-p {
+    /*about*/
+    #about .container-about {
         /* changement agencement voir style.css ligne 199 */
         display: block;
     }
-    #a-propos .container-a-p .who-am-i {
+    #about .container-about .who-am-i {
         /* dans ce container, je change la configuration en block à la place de flex*/
         display: block;
     }
-    .option.a-p-left {
+    .option.about-left {
         display: none;
     }
-    .a-p-right {
+    .about-right {
         width: 100%;
     }
     .right {

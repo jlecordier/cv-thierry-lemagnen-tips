@@ -8,10 +8,10 @@
         font-size: 1rem;
     }
     /*  Je change la taille de la font pour la partie présentation */
-    .a-p-right p {
+    .about-right p {
         font-size: 1.25rem;
     }
-    .a-p-right .ss-txt {
+    .about-right .ss-txt {
         font-size: 1.25rem;
     }
     .box button {
@@ -46,8 +46,8 @@
         background-color: rgb(79, 55, 68, 0.9);
         z-index: 101;
     }
-    .burger,
-    .close-menu {
+    #open-burger-menu-button,
+    #close-burger-menu-button {
         font-size: 4rem;
         font-weight: bold;
         position: fixed;
@@ -67,20 +67,20 @@
         text-decoration: none;
         text-align: center;
     }
-    .burger {
+    #open-burger-menu-button {
         display: block;
         z-index: 102;
         color: #fff;
     }
-    .burger:hover {
+    #open-burger-menu-button:hover {
         color: #bfc3b5;
     }
-    .close-menu {
+    #close-burger-menu-button {
         display: none;
         color: #bfc3b5;
         z-index: 102;
     }
-    .close-menu:hover {
+    #close-burger-menu-button:hover {
         color: #fff;
     }
     #burger-nav {
@@ -249,7 +249,7 @@
 @media screen and (max-width: 360px) {
     /*A propos */
 
-    .a-p-right h2 {
+    .about-right h2 {
         font-size: 1.875rem;
     }
 
