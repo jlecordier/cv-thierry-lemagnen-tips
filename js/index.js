@@ -67,16 +67,16 @@ openBurgerMenuButton.addEventListener('click', () => openBurgerMenu());
     element.addEventListener('click', () => closeBurgerMenu())
 );
 
-$(qsa('h2.competences-page')).on('mouseover', () => {
-    $(qsa('.competence-box ul')).animate({ height: 'toggle' });
-});
+$(qsa('.competence-box ul')).animate({ height: 'hide' });
 
 function showSkills() {
+    const TWO_SECONDS_IN_MILLISECONDS = 2 * 1000;
+    const ANIMATION_DURATION = TWO_SECONDS_IN_MILLISECONDS;
     $(qsa('.competence-box ul')).animate(
         {
             height: 'show',
         },
-        4000
+        ANIMATION_DURATION
     );
 }
 
