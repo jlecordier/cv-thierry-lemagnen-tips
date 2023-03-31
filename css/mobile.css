@@ -8,17 +8,17 @@
         font-size: 1rem;
     }
     /*  Je change la taille de la font pour la partie présentation */
-    .a-p-right p{
+    .a-p-right p {
         font-size: 1.25rem;
     }
-    .a-p-right .ss-txt{
+    .a-p-right .ss-txt {
         font-size: 1.25rem;
     }
     .box button {
         width: 13rem;
         height: 3.125rem;
-        background-color:#4f3744;
-        font-size: 1.25rem;     
+        background-color: #4f3744;
+        font-size: 1.25rem;
     }
     /* contact */
     .tel a p {
@@ -27,11 +27,11 @@
 }
 @media screen and (max-width: 895px) {
     /* menu desktop */
-    #nav-desktop{
+    #nav-desktop {
         display: none;
     }
     /* menu burger */
-    #burger-nav{
+    #burger-nav {
         display: contents;
     }
     .burger-menu {
@@ -44,10 +44,10 @@
         width: 100%;
         color: #bfc3b5;
         background-color: rgb(79, 55, 68, 0.9);
-        z-index:101;
-      }
-      .burger,
-      .close-menu {
+        z-index: 101;
+    }
+    .burger,
+    .close-menu {
         font-size: 4rem;
         font-weight: bold;
         position: fixed;
@@ -56,39 +56,39 @@
         right: 1.5rem;
         border: none;
     }
-    #burger-nav .burger-menu .path a{
+    #burger-nav .burger-menu .path a {
         font-family: 'Josefin Sans', sans-serif;
         text-transform: uppercase;
-        color:#bfc3b5;
+        color: #bfc3b5;
         font-weight: 500;
         font-size: 2rem;
         letter-spacing: 0.063rem;
         padding: 3.125rem 0 3.125rem 0;
         text-decoration: none;
         text-align: center;
-    }    
+    }
     .burger {
         display: block;
-        z-index:102;
-        color:#fff;
+        z-index: 102;
+        color: #fff;
     }
-    .burger:hover{
+    .burger:hover {
         color: #bfc3b5;
-    }      
+    }
     .close-menu {
         display: none;
         color: #bfc3b5;
-        z-index:102;
+        z-index: 102;
     }
-    .close-menu:hover{
-        color:#fff;
+    .close-menu:hover {
+        color: #fff;
     }
-    #burger-nav{
+    #burger-nav {
         display: flex;
-    }      
+    }
     #burger-nav .burger-menu {
         text-align: center;
-        font-size:5rem;
+        font-size: 5rem;
     }
     /* accueil */
     .conteneur {
@@ -96,33 +96,33 @@
     }
     /* à propos boutons */
     .box button:first-child {
-        margin-bottom : 2rem;
+        margin-bottom: 2rem;
     }
-    /* headers des pages compétences, parcours et contact */ 
-    /* compétences : header */ 
-    .competences-page-h2{
+    /* headers des pages compétences, parcours et contact */
+    /* compétences : header */
+    .competences-page-h2 {
         font-size: 4rem;
         font-weight: 500;
         padding: 1.125rem;
     }
     /* parcours : header */
-    .parcours .parcours-formation .parcours-formation-title{
+    .parcours .parcours-formation .parcours-formation-title {
         font-size: 4rem;
         font-weight: 500;
         padding: 1.125rem;
     }
     /* parcours : fonts header box */
-    .text-box .text-box-h3{
+    .text-box .text-box-h3 {
         font-size: 1.9rem;
     }
     /* contact : header */
-    .head-contact h2{
+    .head-contact h2 {
         font-size: 4rem;
         font-weight: 500;
         padding: 1.125rem;
     }
     /* contact : texte sous header */
-    .head-contact p{
+    .head-contact p {
         font-size: 1.5rem;
     }
     /* Contact : à partir de là, les boites teléphone, mail et rencontre passent en display block */
@@ -131,42 +131,42 @@
         grid-template-columns: 1fr;
     }
     /* contact : diminution taille icones */
-    .item a .operator{
+    .item a .operator {
         width: 4.688rem;
     }
-    .item a .lettre{
+    .item a .lettre {
         width: 4.688rem;
     }
-    .item .in-situ{
+    .item .in-situ {
         width: 4.688rem;
     }
     /* contact : font-sizes dans les box */
     .tel a p {
         font-size: 1.75rem;
     }
-    .letter a p{
+    .letter a p {
         font-size: 1.5rem;
     }
-    .situ p:last-child{
+    .situ p:last-child {
         font-size: 1.125rem;
         /* margin: 0 0.625rem 2.5rem 0.625rem; */
     }
 }
 @media screen and (max-width: 600px) {
-    /* page accueil */ 
-    #intro h2{
-        font-size: 1.75rem
+    /* page accueil */
+    #intro h2 {
+        font-size: 1.75rem;
     }
-    #intro h1{
+    #intro h1 {
         font-size: 2.5rem;
     }
-    .topo{
+    .topo {
         font-size: 1.5rem;
     }
-    .skill{
+    .skill {
         font-size: 0.675rem;
     }
-    .skill i{
+    .skill i {
         font-size: 2rem;
         margin-bottom: 1rem;
     }
@@ -176,35 +176,35 @@
         width: 79.14px;
     }
     /* a-propos -> boutons */
-    .box button{
+    .box button {
         width: 10rem;
         height: 1.5rem;
         font-size: 1rem;
     }
     /* à propos boutons */
     .box button:first-child {
-        margin-bottom : 1rem;
+        margin-bottom: 1rem;
     }
-    /* headers des pages compétences, parcours et contact */ 
-    /* compétences : header */ 
-    .competences-page-h2{
+    /* headers des pages compétences, parcours et contact */
+    /* compétences : header */
+    .competences-page-h2 {
         font-size: 2rem;
         font-weight: 500;
         padding: 0.825rem;
     }
     /* parcours : header */
-    .parcours .parcours-formation .parcours-formation-title{
+    .parcours .parcours-formation .parcours-formation-title {
         font-size: 2rem;
         font-weight: 500;
         padding: 0.825rem;
     }
     /* parcours : fonts header box */
     /* contact : header */
-    .head-contact h2{
+    .head-contact h2 {
         font-size: 2rem;
         font-weight: 500;
         padding: 0.825rem;
-    }    
+    }
 }
 @media screen and (max-width: 430px) {
     /*a-propos*/
@@ -213,38 +213,37 @@
     }
 
     /* competences */
-    .competences{
+    .competences {
         margin: auto;
         padding: 1.5rem 0.25rem 1rem 0.25rem;
-        display:block;
+        display: block;
         max-width: 95%;
     }
-    .competences > .competence-box{
+    .competences > .competence-box {
         /* flex: 1rem; */
-        margin: 0  0.3rem 2.5rem 0.3rem;
-        max-width: 85%; 
+        margin: 0 0.3rem 2.5rem 0.3rem;
+        max-width: 85%;
     }
-    .competence-box ul{
-        margin: 0;                   
+    .competence-box ul {
+        margin: 0;
     }
     .competence-box ul.animationFE,
     .competence-box ul.animationBE,
     .competence-box ul.animationCM,
     .competence-box ul.animationDE,
-    .competence-box ul.animationCA
-    {
+    .competence-box ul.animationCA {
         padding: 5px;
     }
-    .competence-box ul li{
+    .competence-box ul li {
         padding: 10px;
-        margin: 0 0 15px 0;               
+        margin: 0 0 15px 0;
     }
-    ul li p{
+    ul li p {
         font-size: 0.825rem;
-        margin-block-end: 0; 
+        margin-block-end: 0;
     }
-    ul li span{
-        padding: 2px 4px 2px 4px
+    ul li span {
+        padding: 2px 4px 2px 4px;
     }
 }
 @media screen and (max-width: 360px) {
@@ -255,10 +254,10 @@
     }
 
     /*parcours*/
-    .text-box{
+    .text-box {
         padding: 20px 10px;
     }
-    .text-box .text-box-h3{
+    .text-box .text-box-h3 {
         font-size: 1.3rem;
     }
     /* contact */
@@ -270,13 +269,13 @@
 @media screen and (max-width: 280px) {
     /*accueil*/
     /*font-size h1 h2*/
-    #intro h2{
-        font-size: 1.25rem
+    #intro h2 {
+        font-size: 1.25rem;
     }
-    #intro h1{
+    #intro h1 {
         font-size: 1.75rem;
     }
-    .topo{
+    .topo {
         font-size: 1rem;
     }
     /* a-propos */
@@ -284,42 +283,42 @@
         height: 50px;
         width: 39.57px;
     }
-    .box-button{
+    .box-button {
         width: 6rem;
         height: 0.75rem;
         font-size: 0.75rem;
     }
-    /* compétences : header */ 
-    .competences-page-h2{
+    /* compétences : header */
+    .competences-page-h2 {
         font-size: 1.25rem;
         padding: 1.5rem 0.5rem;
     }
-    .competence-box ul li p{
+    .competence-box ul li p {
         word-break: break-word;
     }
-    .competence-box ul li span{
-        font-size:0.5rem;
+    .competence-box ul li span {
+        font-size: 0.5rem;
         word-break: break-word;
     }
     /*parcours*/
     /* parcours : header */
-    .parcours .parcours-formation .parcours-formation-title{
+    .parcours .parcours-formation .parcours-formation-title {
         font-size: 1.5rem;
         padding: 1.5rem 0.5rem;
     }
-    .text-box .text-box-h3{
+    .text-box .text-box-h3 {
         font-size: 1rem;
     }
     /*contact*/
-    .letter a p{
+    .letter a p {
         font-size: 1.125rem;
         word-break: break-word;
     }
     /*contact*/
-    .head-contact h2{
-        font-size:1.5rem;
+    .head-contact h2 {
+        font-size: 1.5rem;
     }
-    .head-contact p{
+    .head-contact p {
         font-size: 1rem;
     }
     /*contact: taille box*/
@@ -327,13 +326,13 @@
         margin: 0 1.5rem 1.5rem 1.5rem;
     }
     /* contact : diminution taille icones */
-    .item a .operator{
+    .item a .operator {
         width: 2.75rem;
     }
-    .item a .lettre{
+    .item a .lettre {
         width: 2.75rem;
     }
-    .item .in-situ{
+    .item .in-situ {
         width: 2.75rem;
     }
 }
@@ -341,11 +340,11 @@
 @media screen and (max-width: 250px) {
     /*a-propos*/
 
-    .box button{
-        margin-left:1rem;
+    .box button {
+        margin-left: 1rem;
     }
     /*parcours*/
-    .text-box{
+    .text-box {
         word-break: break-word;
     }
 }
