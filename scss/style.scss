@@ -1,7 +1,7 @@
-@charset "UTF-8";
 /** Fonts **/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sarpanch:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Sarpanch:wght@800&display=swap');
+
 * {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
@@ -15,11 +15,10 @@ html {
     /* permet un scrolling doux */
     scroll-behavior: smooth;
     /* empêche la continuation de ligne si la ligne dépasse la page et coupe au mot : 
-  le problème, c'est que cela coupe les mots et donc ce n'est pas joli */
+    le problème, c'est que cela coupe les mots et donc ce n'est pas joli */
     /* word-break: break-word; */
     /* background: #4f3744; */
 }
-
 body {
     background: #4f3744;
 }
@@ -53,19 +52,22 @@ h1 {
     border-radius: 50%;
     cursor: pointer;
     z-index: 99;
-}
-#scroll-back-top-button:hover {
-    background-color: #555;
-}
-#scroll-back-top-button img {
-    bottom: 3rem;
-    right: 4rem;
-    max-height: 5rem;
-    max-width: 5rem;
-    border-radius: 50%;
+
+    &:hover {
+        background-color: #555;
+    }
+
+    img {
+        bottom: 3rem;
+        right: 4rem;
+        max-height: 5rem;
+        max-width: 5rem;
+        border-radius: 50%;
+    }
 }
 
 /*Barre de navigation*/
+
 #nav-desktop {
     position: fixed;
     top: 0;
@@ -79,57 +81,59 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-#nav-desktop .desktop-menu {
-    width: 95%;
-    text-align: right;
-    margin: 0;
-    /*Barre menu*/
-    /*Chaque élément du menu*/
-}
-#nav-desktop .desktop-menu li {
-    display: inline-block;
-    cursor: pointer;
-}
-#nav-desktop .desktop-menu li a {
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-    color: #bfc3b5;
-    font-weight: 500;
-    font-size: 1.25rem;
-    letter-spacing: 0.063rem;
-    padding-left: 3.125rem;
-    text-decoration: none;
-}
-#nav-desktop .desktop-menu li a:hover {
-    color: rgb(226, 235, 232);
+
+    .desktop-menu {
+        width: 95%;
+        text-align: right;
+        margin: 0;
+
+        /*Barre menu*/
+        /*Chaque élément du menu*/
+        li {
+            display: inline-block;
+            cursor: pointer;
+
+            a {
+                font-family: 'Josefin Sans', sans-serif;
+                text-transform: uppercase;
+                color: #bfc3b5;
+                font-weight: 500;
+                font-size: 1.25rem;
+                letter-spacing: 0.063rem;
+                padding-left: 3.125rem;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgb(226, 235, 232);
+                }
+            }
+        }
+    }
 }
 
 /* menu burger */
 #burger-nav {
     display: none;
-}
-#burger-nav .burger-menu li a:hover {
-    color: rgb(226, 235, 232);
-}
 
+    .burger-menu li a:hover {
+        color: rgb(226, 235, 232);
+    }
+}
 #open-burger-menu-button {
     display: none;
 }
-
 #close-burger-menu-button {
     display: none;
 }
-
 /* ICONE-ESP */
 .icon-esp {
     /* le "texte" (= les icônes) est justifié c-à-d qu'il occupe l'intégralité du champs */
     text-align: justify;
-}
-.icon-esp .icone {
-    display: inline-block;
-}
 
+    .icone {
+        display: inline-block;
+    }
+}
 .icon-esp::after {
     content: '';
     /* affiche les blocs icones en ligne*/
@@ -143,7 +147,6 @@ h1 {
     max-height: 1500px;
     /* background-image: url("../assets/coffee-1276784_960_720.jpg"); */
 }
-
 .accueil {
     background-image: url('../assets/coffee-1276784_960_720.jpg');
     height: 100%;
@@ -163,8 +166,8 @@ h1 {
     /* position: absolute; à mettre pour qu'il soit dans le bas de la page */
     width: 75rem;
     /*-webkit-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  transform: translate(-50%);*/
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);*/
 }
 
 #intro {
@@ -185,46 +188,53 @@ h1 {
     color: white;
     font-size: 1.25rem;
     text-align: center;
-}
-.skill i {
-    display: block;
-    /*taille des icones*/
-    font-size: 4.375rem;
-    margin-bottom: 1.875rem;
-    transition: 0.3s ease;
-}
-.skill i:hover {
-    color: #4f3744;
+
+    i {
+        display: block;
+        /*taille des icones*/
+        font-size: 4.375rem;
+        margin-bottom: 1.875rem;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #4f3744;
+        }
+    }
 }
 
 /** Page à propos **/
+
 #about {
     /* height: 100vh; */
     opacity: 0.875;
     background-color: rgb(226, 235, 232);
     box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
     padding: 5rem 0 3.75rem 0;
-}
-#about .container-about {
-    max-width: 75rem;
-    margin: auto;
-}
-#about .container-about .who-am-i {
-    text-align: justify;
-}
-#about .container-about .who-am-i:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-#about .container-about .who-am-i .option {
-    /* je répartie l'espace entre about-left et about-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
-    display: inline-block;
-}
-#about .left {
-    width: 23rem;
-}
 
+    .container-about {
+        max-width: 75rem;
+        margin: auto;
+
+        .who-am-i {
+            text-align: justify;
+
+            &:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+            }
+
+            .option {
+                /* je répartie l'espace entre about-left et about-right. Je veux que la partie gauche occupe 1 cinquième de l'espace occupé par la partie droite*/
+                display: inline-block;
+            }
+        }
+    }
+
+    .left {
+        width: 23rem;
+    }
+}
 .about-left .ss-txt {
     padding-top: 2rem;
     line-height: 1.875rem;
@@ -243,53 +253,54 @@ h1 {
     background: #000000 url('../assets/pic_identite_2022-2.jpg') no-repeat 50%
         50%;
     background-size: cover;
-}
-.picture:hover {
-    background: #000000 url('../assets/bitmoji-perso.jpg') no-repeat 50% 50%;
-    background-size: cover;
+    &:hover {
+        background: #000000 url('../assets/bitmoji-perso.jpg') no-repeat 50% 50%;
+        background-size: cover;
+    }
 }
 
 .about-right {
     vertical-align: top;
     width: 40rem;
-}
-.about-right h2 {
-    padding-bottom: 1.5rem;
-    font-size: 4rem;
-}
-.about-right p {
-    font-size: 2.5rem;
-    text-align: justify;
-}
 
+    h2 {
+        padding-bottom: 1.5rem;
+        font-size: 4rem;
+    }
+    p {
+        font-size: 2.5rem;
+        text-align: justify;
+    }
+}
 .right {
     display: none;
 }
-
 .box {
     margin-top: 1.125rem;
     text-align: center;
-}
-.box button {
-    width: 15rem;
-    height: 3.125rem;
-    margin: 0 10%;
-    border-radius: 25px;
-    color: white;
-    background-color: #4f3744;
-    font-size: 1.5rem;
-    cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}
-.box button:hover {
-    font-weight: 600;
-}
-.box button a {
-    text-decoration: none;
-    color: white;
-}
-.box button a:hover {
-    font-weight: 600;
+    button {
+        width: 15rem;
+        height: 3.125rem;
+        margin: 0 10%;
+        border-radius: 25px;
+        color: white;
+        background-color: #4f3744;
+        font-size: 1.5rem;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+
+        &:hover {
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
 }
 
 /*Page compétences */
@@ -300,11 +311,9 @@ h1 {
     flex-wrap: wrap;
     width: fit-content;
 }
-
 .competences-page {
     margin: 0 auto 0 auto;
 }
-
 .competences-page-h2 {
     color: #bfc3b5;
     text-align: center;
@@ -322,40 +331,45 @@ h1 {
     border-radius: 2%;
     border: 5px solid rgba(227, 189, 189, 0.09);
     height: fit-content;
-}
-.competence-box h3 {
-    background: rgb(226, 235, 232);
-    font-size: 3rem;
-    padding: 10px 5px 10px 5px;
-    text-align: center;
-}
-.competence-box ul {
-    display: none;
-    padding: 20px 20px 20px 20px;
-    text-align: center;
-    list-style-type: none;
-}
-.competence-box ul li {
-    /*flex: 1 2rem;*/
-    writing-mode: horizontal-tb;
-    border: 1px solid rgb(79, 55, 68);
-    border-radius: 5px;
-    padding: 5px;
-    background: #bfc3b5;
-    margin: 0 0 15px 0;
+
+    h3 {
+        background: rgb(226, 235, 232);
+        font-size: 3rem;
+        padding: 10px 5px 10px 5px;
+        text-align: center;
+    }
+
+    ul {
+        display: none;
+        padding: 20px 20px 20px 20px;
+        text-align: center;
+        list-style-type: none;
+
+        li {
+            /*flex: 1 2rem;*/
+            writing-mode: horizontal-tb;
+            border: 1px solid rgb(79, 55, 68);
+            border-radius: 5px;
+            padding: 5px;
+            background: #bfc3b5;
+            margin: 0 0 15px 0;
+        }
+    }
 }
 
-ul li p {
-    font-size: 1.125rem;
-}
-ul li span {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    color: rgb(226, 235, 232);
-    font-weight: 500;
-    border-radius: 2px;
-    background-color: #929191;
-    padding: 2px 4px 2px 4px;
+ul li {
+    p {
+        font-size: 1.125rem;
+    }
+    span {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: rgb(226, 235, 232);
+        font-weight: 500;
+        border-radius: 2px;
+        background-color: #929191;
+        padding: 2px 4px 2px 4px;
+    }
 }
 
 /*Page parcours - timeline */
@@ -366,7 +380,6 @@ ul li span {
     margin: auto 0;
     padding: auto 0;
 }
-
 /** header parcours **/
 .parcours .parcours-formation .parcours-formation-title {
     text-align: center;
@@ -388,7 +401,6 @@ ul li span {
     /* padding: 10px 50px; */
     display: none;
 }
-
 .parcours-formation-title-timeline::after {
     content: '';
     position: absolute;
@@ -401,7 +413,6 @@ ul li span {
     z-index: -1;
     animation: moveline 6s linear forwards;
 }
-
 /*container */
 .timeline-container {
     padding: 10px 50px;
@@ -412,7 +423,6 @@ ul li span {
     animation-play-state: paused;
     opacity: 0;
 }
-
 @keyframes movedown {
     0% {
         opacity: 1;
@@ -426,46 +436,36 @@ ul li span {
 .timeline-container:nth-child(1) {
     animation-delay: 0s;
 }
-
 .timeline-container:nth-child(2) {
     animation-delay: 1s;
 }
-
 .timeline-container:nth-child(3) {
     animation-delay: 2s;
 }
-
 .timeline-container:nth-child(4) {
     animation-delay: 3s;
 }
-
 .timeline-container:nth-child(5) {
     animation-delay: 4s;
 }
-
 .timeline-container:nth-child(6) {
     animation-delay: 5s;
 }
-
 .timeline-container:nth-child(7) {
     animation-delay: 6s;
 }
-
 .text-box {
     padding: 20px 30px;
     background-color: rgb(226, 235, 232);
     position: relative;
     border-radius: 6px;
 }
-
 .left-container {
     left: 0;
 }
-
 .right-container {
     left: 50%;
 }
-
 .timeline-container img {
     position: absolute;
     width: 40px;
@@ -474,11 +474,9 @@ ul li span {
     top: 33px;
     z-index: 100;
 }
-
 .right-container img {
     left: -20px;
 }
-
 @keyframes moveline {
     0% {
         height: 0;
@@ -490,16 +488,13 @@ ul li span {
 .text-box .text-box-h3 {
     font-size: 2.5rem;
 }
-
 .text-box small {
     display: inline-block;
     margin: 0.125rem;
 }
-
 .text-box small:last-child {
     margin-bottom: 15px;
 }
-
 .left-container-arrow {
     height: 0;
     width: 0;
@@ -511,7 +506,6 @@ ul li span {
     border-bottom: 15px solid transparent;
     right: -15px;
 }
-
 .right-container-arrow {
     height: 0;
     width: 0;
@@ -523,7 +517,6 @@ ul li span {
     border-bottom: 15px solid transparent;
     left: -15px;
 }
-
 @media screen and (max-width: 600px) {
     .parcours-formation-title-timeline {
         margin: 0 auto;
@@ -564,67 +557,66 @@ ul li span {
     background-color: #bfc3b5;
     width: 100%;
 }
-
 .head-contact {
     text-align: center;
     padding: 4rem 0px 5rem;
     color: #4f3744;
-}
-.head-contact h2 {
-    font-size: 5.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    background-color: #bfc3b5;
-    padding: 3.75rem;
-}
-.head-contact p {
-    font-size: 2rem;
-}
 
+    h2 {
+        font-size: 5.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        background-color: #bfc3b5;
+        padding: 3.75rem;
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
 .space {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
-.space .item {
-    /*display: inline-block;*/
-    margin: 0 4rem 4rem 4rem;
-    text-align: center;
-    color: #4f3744;
-    /*white-space:nowrap;*/
-}
-.space .tel {
-    background-color: rgb(244, 246, 246);
-    border-radius: 50px;
-}
-.space .letter {
-    background-color: rgb(244, 246, 246);
-    border-radius: 3.125rem;
-}
-.space .situ {
-    background-color: rgb(244, 246, 246);
-    border-radius: 3.125rem;
-}
 
+    .item {
+        /*display: inline-block;*/
+        margin: 0 4rem 4rem 4rem;
+        text-align: center;
+        color: #4f3744;
+        /*white-space:nowrap;*/
+    }
+
+    .tel {
+        background-color: rgb(244, 246, 246);
+        border-radius: 50px;
+    }
+    .letter {
+        background-color: rgb(244, 246, 246);
+        border-radius: 3.125rem;
+    }
+    .situ {
+        background-color: rgb(244, 246, 246);
+        border-radius: 3.125rem;
+    }
+}
 .item {
     padding: 2rem 0 2rem 0;
     color: #4f3744;
-}
-.item a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: #4f3744;
-}
 
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: #4f3744;
+    }
+}
 .operator {
     margin: 1.25rem;
     width: 25%;
 }
-
 .lettre {
     margin: 1.25rem;
     width: 25%;
 }
-
 .in-situ {
     margin: 1.25rem;
     width: 25%;
@@ -641,16 +633,18 @@ footer {
     text-align: center;
     padding: 25px 0px;
     line-height: 20px;
-}
-footer .links {
-    margin: auto;
-}
-footer .links a img {
-    width: 2rem;
-}
-footer img:hover {
-    filter: opacity(30%);
-    filter: sepia(100%);
+
+    .links {
+        margin: auto;
+        a img {
+            width: 2rem;
+        }
+    }
+
+    img:hover {
+        filter: opacity(30%);
+        filter: sepia(100%);
+    }
 }
 
 /* Responsive quand l'écran est égal ou inférieur à 1787 pixels */
@@ -666,35 +660,40 @@ footer img:hover {
         bottom: 2.5rem;
         width: 75rem;
     }
+
     #intro {
         font-size: 2rem;
         font-weight: 300;
     }
+
     .topo {
         font-size: 2.5rem;
         font-weight: 500;
         margin: 2rem 0 3rem 0;
     }
+
     .skill {
         font-size: 1.25rem;
+
+        i {
+            /*taille des icones*/
+            font-size: 4.375rem;
+            margin-bottom: 1.875rem;
+            transition: 0.3s ease;
+            /*-webkit-transition: all 0.3s;*/
+        }
     }
-    .skill i {
-        /*taille des icones*/
-        font-size: 4.375rem;
-        margin-bottom: 1.875rem;
-        transition: 0.3s ease;
-        /*-webkit-transition: all 0.3s;*/
-    }
+
     /* Page à propos */
     /* .about-right {
-      flex: 6;
-  }
-  .box button {
-      width: 15rem;
-      height: 3.125rem;
-      background-color:#4f3744;
-      font-size: 1.5rem;     
-  } */
+        flex: 6;
+    }
+    .box button {
+        width: 15rem;
+        height: 3.125rem;
+        background-color:#4f3744;
+        font-size: 1.5rem;     
+    } */
 }
 /* quand l'écran est à 1537 pixels ou moins, je dois changer la police de la page compétence */
 /* j'en profite pour changer la présentation de la page accueil */
@@ -703,6 +702,7 @@ footer img:hover {
     .cafe {
         height: 100vh;
     }
+
     /* page compétences */
     .competence-box h3 {
         font-size: 2rem;
@@ -718,6 +718,7 @@ footer img:hover {
     .conteneur {
         max-width: 85%;
     }
+
     #intro {
         font-size: 2.063rem;
     }
@@ -725,18 +726,21 @@ footer img:hover {
     #about .container-about {
         max-width: 85%;
     }
+
     /* .draw{
-      width: 272.25px;
-  } */
+        width: 272.25px;
+    } */
     .about-right {
         width: 55%;
-    }
-    .about-right h2 {
-        font-size: 3rem;
+
+        h2 {
+            font-size: 3rem;
+        }
     }
     p.presentation {
         font-size: 1.75rem;
     }
+
     /* contact box -> mail */
     .letter a p {
         font-size: 1.5rem;
@@ -764,10 +768,11 @@ footer img:hover {
     .picture.right {
         float: left;
         /* width: calc(30%);
-    height:calc(30%); */
+        height:calc(30%); */
         margin-right: 1.25rem;
     }
 }
+
 @media screen and (max-width: 1160px) {
     /* page accueil */
     .conteneur {
@@ -784,58 +789,62 @@ footer img:hover {
     }
     .skill {
         font-size: 0.875rem;
+
+        i {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
     }
-    .skill i {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
+
     /* contact box -> mail */
     .letter a p {
         font-size: 1.125rem;
     }
     .situ p {
         margin: 0 10px 5px 10px;
-    }
-    .situ p:last-child {
-        font-size: 0.75rem;
-        margin: 0 0.625rem 0 0.625rem;
+        &:last-child {
+            font-size: 0.75rem;
+            margin: 0 0.625rem 0 0.625rem;
+        }
     }
 }
+
 @media screen and (max-width: 1077px) {
     /* Homepage */
     /*
-  .accueil {
-      background-image: url("../assets/coffee-cropped-1276784_960_720.jpg");
-  }
+    .accueil {
+        background-image: url("../assets/coffee-cropped-1276784_960_720.jpg");
+    }
 
-  /* competences */
+    /* competences */
     .competences {
         margin: 0;
         padding: 0 1.25rem 2rem 1.25rem;
-    }
-    .competences > .competence-box {
-        flex: 1 1 5rem;
-        margin: 1rem;
-        /*width: 20rem;*/
-    }
-    .competences > .competence-box:nth-child(3) ul li:last-child p:first-child {
-        font-size: 0.9rem;
-    }
-    .competences > .competence-box ul li {
-        padding: 5px 0 5px 0;
-    }
-    .competences > .competence-box ul li p {
-        font-size: 1rem;
-        margin: 0 0 15px 0;
+        & > .competence-box {
+            flex: 1 1 5rem;
+            margin: 1rem;
+            /*width: 20rem;*/
+
+            &:nth-child(3) ul li:last-child p:first-child {
+                font-size: 0.9rem;
+            }
+
+            ul li {
+                padding: 5px 0 5px 0;
+
+                p {
+                    font-size: 1rem;
+                    margin: 0 0 15px 0;
+                }
+            }
+        }
     }
     /* contact
-  .item a .operator{
-      width: 2rem;
-  }*/
+    .item a .operator{
+        width: 2rem;
+    }*/
     /* contact font-size à l'intérieur des boites */
     .tel a p {
         font-size: 1.75rem;
     }
 }
-
-/*# sourceMappingURL=style.css.map */
